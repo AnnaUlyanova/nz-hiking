@@ -1,0 +1,40 @@
+#map {
+  height: 500px;
+}
+
+#img-header {
+  height: 250px;
+}
+
+.wide {
+  width:100%;
+  height:250px;
+  background-image:url('./images/header-4-2.jpg');
+  background-size:cover;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+#download-pdf {
+  margin-top: 30px;
+}
+
+#activities {
+  margin-top: 30px;
+  height: 300px;
+  background-color: #c2e7ff;
+}
+
+
+#pack-list{
+  margin-top: 30px;
+  height: 300px;
+  background-color: #e0f3ff;
+}
+
+.my-btn  {
+  width: 40%;
+  margin: 0 auto;
+}
