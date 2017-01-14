@@ -1,20 +1,34 @@
-#map {
-  height: 500px;
-}
-
 #img-header {
   height: 250px;
+}
+
+#header-text {
+  /*color: #D2DEFA;*/
+  color: #1C3E8C;
+  text-shadow: 4px 4px 2px rgba(196,214,255, 1);
+  font-family: 'Eczar', serif;
+  letter-spacing: 3px;
+  vertical-align: middle;
+  text-align: center;
+  height: 250px;
+  line-height: 250px;
+  font-size: 5em;
 }
 
 .wide {
   width:100%;
   height:250px;
-  background-image:url('./images/header-4-2.jpg');
-  background-size:cover;
+  background-image:url('./images/header.jpg');
+  background-size: cover;
 }
 
 .btn {
   border-radius: 0;
+}
+
+#map {
+  margin-top: 30px;
+  height: 500px;
 }
 
 #download-pdf {
