@@ -9,7 +9,8 @@ exports.seed = function(knex, Promise) {
           id: 1,
           walk_name: 'Abel Tasman Coast Track',
           description: '',
-          coordinates: '',
+          lat: -40.909,
+          lng: 173.048,
           full_walk: true,
           pdf_url:''
         }),
@@ -17,7 +18,8 @@ exports.seed = function(knex, Promise) {
           id: 2,
           walk_name: 'Heaphy Track',
           description: '',
-          coordinates: '',
+          lat: -40.886,
+          lng: 172.303,
           full_walk: true,
           pdf_url:''
         }),
@@ -25,7 +27,8 @@ exports.seed = function(knex, Promise) {
           id: 3,
           walk_name: 'Kepler Track',
           description: '',
-          coordinates: '',
+          lat: -45.451,
+          lng: 167.575,
           full_walk: true,
           pdf_url:''
         }),
@@ -33,7 +36,8 @@ exports.seed = function(knex, Promise) {
           id: 4,
           walk_name: 'Lake Waikaremoana',
           description: '',
-          coordinates: '',
+          lat: -38.801,
+          lng: 177.115,
           full_walk: true,
           pdf_url:''
         }),
@@ -41,7 +45,8 @@ exports.seed = function(knex, Promise) {
           id: 5,
           walk_name: 'Milford Track',
           description: '',
-          coordinates: '',
+          lat: -44.828,
+          lng: 167.793,
           full_walk: true,
           pdf_url:''
         }),
@@ -49,7 +54,8 @@ exports.seed = function(knex, Promise) {
           id: 6,
           walk_name: 'Rakiura Track',
           description: '',
-          coordinates: '',
+          lat: -46.684,
+          lng: 167.868,
           full_walk: true,
           pdf_url:''
         }),
@@ -57,7 +63,8 @@ exports.seed = function(knex, Promise) {
           id: 7,
           walk_name: 'Routeburn Track',
           description: '',
-          coordinates: '',
+          lat: -44.781,
+          lng: 168.163,
           full_walk: true,
           pdf_url:''
         }),
@@ -65,7 +72,8 @@ exports.seed = function(knex, Promise) {
           id: 8,
           walk_name: 'Tongariro Northern Circuit',
           description: '',
-          coordinates: '',
+          lat: -39.209,
+          lng: 175.680,
           full_walk: true,
           pdf_url:''
         }),
@@ -73,7 +81,8 @@ exports.seed = function(knex, Promise) {
           id: 9,
           walk_name: 'Whanganui Journey',
           description: '',
-          coordinates: '',
+          lat: -39.209,
+          lng: 175.680,
           full_walk: true,
           pdf_url:''
         }),
@@ -81,7 +90,6 @@ exports.seed = function(knex, Promise) {
           id: 10,
           walk_name: 'Abel Tasman Coast Track',
           description: '',
-          coordinates: '',
           full_walk: false,
           pdf_url:''
         }),
@@ -89,7 +97,6 @@ exports.seed = function(knex, Promise) {
           id: 11,
           walk_name: 'Heaphy Track',
           description: '',
-          coordinates: '',
           full_walk: false,
           pdf_url:''
         }),
@@ -97,7 +104,6 @@ exports.seed = function(knex, Promise) {
           id: 12,
           walk_name: 'Kepler Track',
           description: '',
-          coordinates: '',
           full_walk: false,
           pdf_url:''
         }),
@@ -105,7 +111,6 @@ exports.seed = function(knex, Promise) {
           id: 13,
           walk_name: 'Lake Waikaremoana',
           description: '',
-          coordinates: '',
           full_walk: false,
           pdf_url:''
         }),
@@ -113,7 +118,6 @@ exports.seed = function(knex, Promise) {
           id: 14,
           walk_name: 'Milford Track',
           description: '',
-          coordinates: '',
           full_walk: false,
           pdf_url:''
         }),
@@ -121,7 +125,6 @@ exports.seed = function(knex, Promise) {
           id: 15,
           walk_name: 'Rakiura Track',
           description: '',
-          coordinates: '',
           full_walk: false,
           pdf_url:''
         }),
@@ -129,7 +132,6 @@ exports.seed = function(knex, Promise) {
           id: 16,
           walk_name: 'Routeburn Track',
           description: '',
-          coordinates: '',
           full_walk: false,
           pdf_url:''
         }),
@@ -137,7 +139,6 @@ exports.seed = function(knex, Promise) {
           id: 17,
           walk_name: 'Tongariro Northern Circuit',
           description: '',
-          coordinates: '',
           full_walk: false,
           pdf_url:''
         }),
@@ -145,7 +146,6 @@ exports.seed = function(knex, Promise) {
           id: 18,
           walk_name: 'Whanganui Journey',
           description: '',
-          coordinates: '',
           full_walk: false,
           pdf_url:''
         })

@@ -1,25 +1,3 @@
-// function initMap() {
-//     const waikaremoana = {
-//         lat: -38.801,
-//         lng: 177.115
-//     };
-//
-//     const locations = [
-//       ['Lake Waikaremoana', -38.801, 177.115],
-//       ['Milford Track', -44.828, 167.793],
-//       ['Abel Tasman Coast Track', -40.909, 173.048]
-//     ]
-//
-//     const mapSettings = {
-//       zoom: 6,
-//       center: waikaremoana,
-//       mapTypeId: 'terrain'
-//     }
-//     const map = new google.maps.Map(document.getElementById('map'), mapSettings);
-//
-//
-//     const marker = new google.maps.Marker({position: waikaremoana, map: map});
-// }
 function initMap() {
     var map;
     var bounds = new google.maps.LatLngBounds();

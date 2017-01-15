@@ -8,10 +8,8 @@ export default React.createClass({
                 <div className="col-md-12">
                   <div id="activities">
                     <ul>
-                      <li>Onepoto to Panekire Hut Lookout walk</li>
-                      <li>Aniwaniwa Falls Track</li>
-                      <li>Cascade Falls</li>
-                      <li>Papakorito Fallsk</li>
+                      <li>Walk 1</li>
+                      <li>Walk 2</li>
                     </ul>
                     <button type="button" className="btn btn-primary btn-block my-btn">Learn more..</button>
                   </div>

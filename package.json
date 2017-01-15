@@ -5,12 +5,15 @@
   "main": "index.js",
   "dependencies": {
     "babel-cli": "^6.18.0",
+    "bluebird": "^3.4.7",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "google-maps-react": "^1.0.19",
     "react-async-script-loader": "^0.2.2",
-    "sqlite3": "^3.1.8"
+    "sqlite3": "^3.1.8",
+    "superagent": "^3.3.2",
+    "superagent-bluebird-promise": "^4.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
