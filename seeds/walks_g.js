@@ -8,83 +8,83 @@ exports.seed = function(knex, Promise) {
         knex('walks_general').insert({
           id: 1,
           walk_name: 'Abel Tasman Coast Track',
-          description: '',
+          description: '60 km one way / 3 - 5 days / Intermediate',
           lat: -40.909,
           lng: 173.048,
           full_walk: true,
-          pdf_url:''
+          pdf_url: './public/pdfs/abel-tasman.pdf'
         }),
         knex('walks_general').insert({
           id: 2,
           walk_name: 'Heaphy Track',
-          description: '',
+          description: '78.4 km one way / 4 - 6 days / Intermediate',
           lat: -40.886,
           lng: 172.303,
           full_walk: true,
-          pdf_url:''
+          pdf_url: './public/pdfs/heaphy.pdf'
         }),
         knex('walks_general').insert({
           id: 3,
           walk_name: 'Kepler Track',
-          description: '',
+          description: '60 km loop / 3 - 4 days / Intermediate',
           lat: -45.451,
           lng: 167.575,
           full_walk: true,
-          pdf_url:''
+          pdf_url: './public/pdfs/kepler.pdf'
         }),
         knex('walks_general').insert({
           id: 4,
           walk_name: 'Lake Waikaremoana',
-          description: '',
+          description: '46 km one way/ 3 - 4 days / Intermediate',
           lat: -38.801,
           lng: 177.115,
           full_walk: true,
-          pdf_url:''
+          pdf_url: './public/pdfs/waikaremoana.pdf'
         }),
         knex('walks_general').insert({
           id: 5,
           walk_name: 'Milford Track',
-          description: '',
+          description: '53.5 km one way / 4 days / Intermediate',
           lat: -44.828,
           lng: 167.793,
           full_walk: true,
-          pdf_url:''
+          pdf_url: './public/pdfs/milford.pdf'
         }),
         knex('walks_general').insert({
           id: 6,
           walk_name: 'Rakiura Track',
-          description: '',
+          description: '32 km loop / 3 days / Intermediate',
           lat: -46.684,
           lng: 167.868,
           full_walk: true,
-          pdf_url:''
+          pdf_url: './public/pdfs/rakiura.pdf'
         }),
         knex('walks_general').insert({
           id: 7,
           walk_name: 'Routeburn Track',
-          description: '',
+          description: '32 km one way / 2 - 4 days / Intermediate',
           lat: -44.781,
           lng: 168.163,
           full_walk: true,
-          pdf_url:''
+          pdf_url: './public/pdfs/routeburn.pdf'
         }),
         knex('walks_general').insert({
           id: 8,
           walk_name: 'Tongariro Northern Circuit',
-          description: '',
+          description: '43.1 km loop / 3-4 days / Intermediate',
           lat: -39.209,
           lng: 175.680,
           full_walk: true,
-          pdf_url:''
+          pdf_url: './public/pdfs/tongariro.pdf'
         }),
         knex('walks_general').insert({
           id: 9,
           walk_name: 'Whanganui Journey',
-          description: '',
+          description: '87 or 145 km one way / 3 or 5 days / Kayaking and canoeing',
           lat: -39.209,
           lng: 175.680,
           full_walk: true,
-          pdf_url:''
+          pdf_url: './public/pdfs/whanganui.pdf'
         }),
         knex('walks_general').insert({
           id: 10,
