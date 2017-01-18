@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   )
 })
 
-function initMap() {
+//window Object makes the function global
+window.initMap = function initMap() {
     var map;
     var bounds = new google.maps.LatLngBounds();
     var mapOptions = {
