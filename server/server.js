@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express')
 const bodyParser = require('body-parser')
+var cors = require('cors')
 
 const server = express()
 
@@ -11,6 +12,7 @@ const packItems = require('./routes/packing-list')
 
 // Middleware
 server.use(bodyParser.json())
+server.use(cors())
 
 
 module.exports = server
