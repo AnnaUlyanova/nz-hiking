@@ -1,6 +1,8 @@
 const path = require('path')
 const express = require('express')
 const bodyParser = require('body-parser')
+const hbs = require('express-handlebars')
+const Handlebars = require('handlebars')
 const cors = require('cors')
 
 const server = express()
