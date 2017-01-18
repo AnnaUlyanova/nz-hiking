@@ -40,7 +40,7 @@ window.initMap = function initMap() {
     var infoWindowContent =[
     ['<div class="info_content">' +
     '<h3>' + markers[0][0] + '</h3>' +
-    '<p>Track Description.</p>' + '</div>'],
+    '<p>Track Description.</p> <a href="http://localhost:3000/walk/1">Click here</a>' + '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[1][0] + '</h3>' +
     '<p>Track Description.</p>' +

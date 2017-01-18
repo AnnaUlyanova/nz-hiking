@@ -1,9 +1,10 @@
 const path = require('path')
 const express = require('express')
 const bodyParser = require('body-parser')
-var cors = require('cors')
+const cors = require('cors')
 
 const server = express()
+const routes = require('./routes/paths')
 
 const fullWalks = require('./routes/fullwalks')
 const PDFs = require('./routes/pdfs')
@@ -18,6 +19,7 @@ server.use(cors())
 module.exports = server
 
 //routes
+server.get('/walk/1', routes.getWalk1)
 server.use('/full-walks', fullWalks)
 server.use('/pdf', PDFs)
 server.use('/activities', activities)
