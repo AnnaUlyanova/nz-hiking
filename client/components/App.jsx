@@ -50,7 +50,9 @@ export default React.createClass({
     return (
       <div className='container-fluid'>
         <Header />
-        <Map />
+
+          <Map />
+    
         <ButtonPdf />
         <Activities activities={this.state.activities}/>
         <PackingList />

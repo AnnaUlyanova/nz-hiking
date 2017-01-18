@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import App from './components/App'
+import mapData from './map-data'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
@@ -24,55 +25,55 @@ window.initMap = function initMap() {
 
     // Multiple markers location, latitude, and longitude
     var markers = [
-      ['Lake Waikaremoana', -38.801, 177.115],
-      ['Milford Track', -44.828, 167.793],
-      ['Abel Tasman Coast Track', -40.909, 173.048],
-      ['Tongariro Northern Circuit', -39.209, 175.680],
-      ['Whanganui Journey', -38.884, 175.280],
-      ['Kepler Track', -45.451, 167.575],
-      ['Heaphy Track', -40.886, 172.303],
-      ['Routeburn Track', -44.781, 168.163],
-      ['Rakiura Track', -46.684, 167.868]
-    ];
+    ['Lake Waikaremoana', -38.801, 177.115],
+    ['Milford Track', -44.828, 167.793],
+    ['Abel Tasman Coast Track', -40.909, 173.048],
+    ['Tongariro Northern Circuit', -39.209, 175.680],
+    ['Whanganui Journey', -38.884, 175.280],
+    ['Kepler Track', -45.451, 167.575],
+    ['Heaphy Track', -40.886, 172.303],
+    ['Routeburn Track', -44.781, 168.163],
+    ['Rakiura Track', -46.684, 167.868]
+  ]
 
     // Info window content
-    var infoWindowContent = [
-        ['<div class="info_content">' +
-        '<h3>' + markers[0][0] + '</h3>' +
-        '<p>Track Description.</p>' + '</div>'],
-        ['<div class="info_content">' +
-        '<h3>' + markers[1][0] + '</h3>' +
-        '<p>Track Description.</p>' +
-        '</div>'],
-        ['<div class="info_content">' +
-        '<h3>' + markers[2][0] + '</h3>' +
-        '<p>Track Description.</p>' +
-        '</div>'],
-        ['<div class="info_content">' +
-        '<h3>' + markers[3][0] + '</h3>' +
-        '<p>Track Description.</p>' +
-        '</div>'],
-        ['<div class="info_content">' +
-        '<h3>' + markers[4][0] + '</h3>' +
-        '<p>Track Description.</p>' +
-        '</div>'],
-        ['<div class="info_content">' +
-        '<h3>' + markers[5][0] + '</h3>' +
-        '<p>Track Description.</p>' +
-        '</div>'],
-        ['<div class="info_content">' +
-        '<h3>' + markers[6][0] + '</h3>' +
-        '<p>Track Description.</p>' +
-        '</div>'],
-        ['<div class="info_content">' +
-        '<h3>' + markers[7][0] + '</h3>' +
-        '<p>Track Description.</p>' +
-        '</div>'],
-        ['<div class="info_content">' +
-        '<h3>' + markers[8][0] + '</h3>' +
-        '<p>Track Description.</p>' +
-        '</div>']
-    ];
+    var infoWindowContent =[
+    ['<div class="info_content">' +
+    '<h3>' + markers[0][0] + '</h3>' +
+    '<p>Track Description.</p>' + '</div>'],
+    ['<div class="info_content">' +
+    '<h3>' + markers[1][0] + '</h3>' +
+    '<p>Track Description.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>' + markers[2][0] + '</h3>' +
+    '<p>Track Description.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>' + markers[3][0] + '</h3>' +
+    '<p>Track Description.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>' + markers[4][0] + '</h3>' +
+    '<p>Track Description.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>' + markers[5][0] + '</h3>' +
+    '<p>Track Description.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>' + markers[6][0] + '</h3>' +
+    '<p>Track Description.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>' + markers[7][0] + '</h3>' +
+    '<p>Track Description.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>' + markers[8][0] + '</h3>' +
+    '<p>Track Description.</p>' +
+    '</div>']
+]
 
     // Add multiple markers to map
     var infoWindow = new google.maps.InfoWindow(), marker, i;
@@ -108,4 +109,4 @@ window.initMap = function initMap() {
 
 }
 // Load initialize function
-// google.maps.event.addDomListener(window, 'load', initMap);
+google.maps.event.addDomListener(window, 'load', initMap);
