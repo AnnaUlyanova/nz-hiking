@@ -3,10 +3,26 @@ var config = require('../knexfile')[environment]
 var connection = require('knex')(config)
 
 module.exports = {
+  getMyWalk: getMyWalk,
+  getMyActivities: getMyActivities,
   getFullWalks: getFullWalks,
   getPDFs: getPDFs,
   getActivities: getActivities,
   getpackItems: getpackItems
+}
+
+
+function getMyWalk (id) {
+  var db = connection
+  return db('walks_general')
+    .where('id', id)
+    .first()
+}
+
+function getMyActivities (id) {
+  var db = connection
+  return db('activities')
+    .where('walk_id', id)
 }
 
 function getFullWalks() {

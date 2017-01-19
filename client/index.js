@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import App from './components/App'
-import mapData from './map-data'
+
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
@@ -16,7 +16,8 @@ window.initMap = function initMap() {
     var map;
     var bounds = new google.maps.LatLngBounds();
     var mapOptions = {
-        mapTypeId: 'terrain'
+        mapTypeId: 'terrain',
+        center: {lat: -40.909, lng: 173.048}
     };
 
     // Display a map on the web page
@@ -40,38 +41,38 @@ window.initMap = function initMap() {
     var infoWindowContent =[
     ['<div class="info_content">' +
     '<h3>' + markers[0][0] + '</h3>' +
-    '<p>Track Description.</p> <a href="http://localhost:3000/walk/1">Click here</a>' + '</div>'],
+    '<p>46 km one way/ 3 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/4">Click here</a>' + '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[1][0] + '</h3>' +
-    '<p>Track Description.</p>' +
+    '<p>53.5 km one way / 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/5">Click here</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[2][0] + '</h3>' +
-    '<p>Track Description.</p>' +
+    '<p>60 km one way / 3 - 5 days / Intermediate.</p> <a href="http://localhost:3000/walk/1">Click here</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[3][0] + '</h3>' +
-    '<p>Track Description.</p>' +
+    '<p>43.1 km loop / 3-4 days / Intermediate.</p> <a href="http://localhost:3000/walk/8">Click here</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[4][0] + '</h3>' +
-    '<p>Track Description.</p>' +
+    '<p>87 or 145 km one way / 3 or 5 days / Kayaking and canoeing.</p> <a href="http://localhost:3000/walk/9">Click here</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[5][0] + '</h3>' +
-    '<p>Track Description.</p>' +
+    '<p>60 km loop / 3 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/3">Click here</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[6][0] + '</h3>' +
-    '<p>Track Description.</p>' +
+    '<p>78.4 km one way / 4 - 6 days / Intermediate.</p> <a href="http://localhost:3000/walk/2">Click here</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[7][0] + '</h3>' +
-    '<p>Track Description.</p>' +
+    '<p>32 km one way / 2 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/7">Click here</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[8][0] + '</h3>' +
-    '<p>Track Description.</p>' +
+    '<p>32 km loop / 3 days / Intermediate.</p> <a href="http://localhost:3000/walk/6">Click here</a>' +
     '</div>']
 ]
 
