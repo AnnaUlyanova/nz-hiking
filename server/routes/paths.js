@@ -4,8 +4,7 @@ var express = require('express')
 var db = require('../db')
 
 module.exports = {
-  getWalkById: getWalkById,
-
+  getWalkById: getWalkById
 }
 
 function getWalkById (req, res) {

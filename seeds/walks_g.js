@@ -12,7 +12,7 @@ exports.seed = function(knex, Promise) {
           lat: -40.909,
           lng: 173.048,
           full_walk: true,
-          pdf_url: './public/pdfs/abel-tasman.pdf'
+          pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/nelson-marlborough/abel-tasman-coast-track-brochure.pdf'
         }),
         knex('walks_general').insert({
           id: 2,
@@ -21,7 +21,7 @@ exports.seed = function(knex, Promise) {
           lat: -40.886,
           lng: 172.303,
           full_walk: true,
-          pdf_url: './public/pdfs/heaphy.pdf'
+          pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/nelson-marlborough/heaphy-track-brochure.pdf'
         }),
         knex('walks_general').insert({
           id: 3,
@@ -30,7 +30,7 @@ exports.seed = function(knex, Promise) {
           lat: -45.451,
           lng: 167.575,
           full_walk: true,
-          pdf_url: './public/pdfs/kepler.pdf'
+          pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/southland/kepler-track-brochure.pdf'
         }),
         knex('walks_general').insert({
           id: 4,
@@ -39,7 +39,7 @@ exports.seed = function(knex, Promise) {
           lat: -38.801,
           lng: 177.115,
           full_walk: true,
-          pdf_url: './public/pdfs/waikaremoana.pdf'
+          pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/east-coast-hawkes-bay/lake-waikaremoana-track.pdf'
         }),
         knex('walks_general').insert({
           id: 5,
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
           lat: -44.828,
           lng: 167.793,
           full_walk: true,
-          pdf_url: './public/pdfs/milford.pdf'
+          pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/southland/milford-track-brochure.pdf'
         }),
         knex('walks_general').insert({
           id: 6,
@@ -57,7 +57,7 @@ exports.seed = function(knex, Promise) {
           lat: -46.684,
           lng: 167.868,
           full_walk: true,
-          pdf_url: './public/pdfs/rakiura.pdf'
+          pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/southland/rakiura-track-brochure.pdf'
         }),
         knex('walks_general').insert({
           id: 7,
@@ -66,7 +66,7 @@ exports.seed = function(knex, Promise) {
           lat: -44.781,
           lng: 168.163,
           full_walk: true,
-          pdf_url: './public/pdfs/routeburn.pdf'
+          pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/southland/routeburn-track-brochure.pdf'
         }),
         knex('walks_general').insert({
           id: 8,
@@ -75,7 +75,7 @@ exports.seed = function(knex, Promise) {
           lat: -39.209,
           lng: 175.680,
           full_walk: true,
-          pdf_url: './public/pdfs/tongariro.pdf'
+          pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/tongariro-taupo/tongariro-circuit-brochure.pdf'
         }),
         knex('walks_general').insert({
           id: 9,
@@ -84,7 +84,7 @@ exports.seed = function(knex, Promise) {
           lat: -39.209,
           lng: 175.680,
           full_walk: true,
-          pdf_url: './public/pdfs/whanganui.pdf'
+          pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/wanganui/whanganui-journey-brochure.pdf'
         }),
         knex('walks_general').insert({
           id: 10,
