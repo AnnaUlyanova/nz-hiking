@@ -35,6 +35,7 @@ module.exports = server
 
 //routes
 server.get('/walk/:id', routes.getWalkById)
+server.post('/', routes.postItem)
 
 server.use('/full-walks', fullWalks)
 server.use('/pdf', PDFs)

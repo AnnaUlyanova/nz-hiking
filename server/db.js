@@ -5,6 +5,8 @@ var connection = require('knex')(config)
 module.exports = {
   getMyWalk: getMyWalk,
   getMyActivities: getMyActivities,
+  getMyItems: getMyItems,
+  insertItem: insertItem,
   getFullWalks: getFullWalks,
   getPDFs: getPDFs,
   getActivities: getActivities,
@@ -24,6 +26,20 @@ function getMyActivities (id) {
   return db('activities')
     .where('walk_id', id)
 }
+
+function getMyItems (id) {
+  var db = connection
+  return db('packing_list')
+    .where('walk_id', id)
+}
+
+function insertItem (item) {
+  var db = connection
+  return db('packing_list')
+    .insert({walk_id: item.walk_id, item: item.item})
+}
+
+//API functions
 
 function getFullWalks() {
   var db = connection
