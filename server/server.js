@@ -26,7 +26,7 @@ server.engine('hbs', hbs({
 server.set('view engine', 'hbs')
 server.set('views', path.join(__dirname, 'views'))
 
-
+//express.static(path.join(__dirname, 'public'))
 server.use(express.static('public'))
 server.use(bodyParser.urlencoded({ extended: true }))
 

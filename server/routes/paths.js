@@ -16,7 +16,6 @@ function getWalkById (req, res) {
           db.getMyItems(req.params.id)
           .then(function(item) {
             let data = {
-              title: "New Zealand hiking | " + walk.walk_name,
               currentWalk: walk,
               activities: activity,
               items: item
