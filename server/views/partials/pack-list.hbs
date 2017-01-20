@@ -1,0 +1,18 @@
+<div class="row">
+    <div class"col-md-12">
+      <div id="packing-list">
+<h3>What to pack</h3>
+          <ul>
+          {{#each items}}
+          <li>{{item}}</li>
+          {{/each}}
+          </ul>
+          <form action="/" method="post">
+              <input type="hidden" name="id" value={{currentWalk.id}}>
+              <input type="text" name="itemname" placeholder="My item to pack" onfocus="this.placeholder = ''">
+
+              <button type="submit" name="button">Add my item</button>
+          </form>
+      </div>
+    </div>
+</div>
