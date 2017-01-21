@@ -1,13 +1,13 @@
-<div class="row">
-    <div class"col-md-12">
-      <div id="activities">
-<h3>What to see</h3>
-          <ul>
-            {{#each activities}}
-              <li>{{description}}</li>
-            {{/each}}
-          </ul>
-        <a href="{{activities.0.url}}" class="button">Learn more..</a>
-      </div>
-    </div>
+<div id="activities">
+
+    <h3>What to see</h3>
+
+    <ul>
+      {{#each activities}}
+        <li>{{description}}</li>
+      {{/each}}
+    </ul>
+
+    <a href="{{activities.0.url}}" class="button">Learn more..</a>
+    
 </div>

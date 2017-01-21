@@ -3,7 +3,10 @@ import React from 'react'
 export default React.createClass({
   render () {
     return (
-      <h5>This is Footer</h5>
+      <footer>
+            <hr className="hr-main" />
+            <p>by <a href="https://github.com/AnnaUlyanova" target="_blank">Anna Ulyanova</a></p>
+      </footer>
     )
   }
 })

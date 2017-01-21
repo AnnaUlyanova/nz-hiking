@@ -1,12 +1,31 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+
 
 import App from './components/App'
+import Body from './components/Body'
+import Map from './components/Map'
+import Notes from './components/Notes'
+import Photos from './components/Photos'
+import About from './components/About'
 
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <App />,
+    (
+      <Router history = {hashHistory}>
+        <Route path='/' component={ App } >
+          <Route component={ Body }>
+            <IndexRoute component={ Map} />
+            <Route path='my-notes' component = { Notes } />
+            <Route path='photo-gallery' component = { Photos } />
+            <Route path='about' component = { About } />
+          </Route>
+        </Route>
+      </Router>
+    ),
+
     document.getElementById('app')
   )
 })
@@ -26,7 +45,7 @@ window.initMap = function initMap() {
 
     // Multiple markers location, latitude, and longitude
     var markers = [
-    ['Lake Waikaremoana', -38.801, 177.115],
+    ['Lake Waikaremoana', -38.714, 177.051],
     ['Milford Track', -44.828, 167.793],
     ['Abel Tasman Coast Track', -40.909, 173.048],
     ['Tongariro Northern Circuit', -39.209, 175.680],
@@ -41,38 +60,38 @@ window.initMap = function initMap() {
     var infoWindowContent =[
     ['<div class="info_content">' +
     '<h3>' + markers[0][0] + '</h3>' +
-    '<p>46 km one way/ 3 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/4">Click here</a>' + '</div>'],
+    '<p>46 km one way/ 3 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/4">Learn more...</a>' + '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[1][0] + '</h3>' +
-    '<p>53.5 km one way / 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/5">Click here</a>' +
+    '<p>53.5 km one way / 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/5">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[2][0] + '</h3>' +
-    '<p>60 km one way / 3 - 5 days / Intermediate.</p> <a href="http://localhost:3000/walk/1">Click here</a>' +
+    '<p>60 km one way / 3 - 5 days / Intermediate.</p> <a href="http://localhost:3000/walk/1">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[3][0] + '</h3>' +
-    '<p>43.1 km loop / 3-4 days / Intermediate.</p> <a href="http://localhost:3000/walk/8">Click here</a>' +
+    '<p>43.1 km loop / 3-4 days / Intermediate.</p> <a href="http://localhost:3000/walk/8">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[4][0] + '</h3>' +
-    '<p>87 or 145 km one way / 3 or 5 days / Kayaking and canoeing.</p> <a href="http://localhost:3000/walk/9">Click here</a>' +
+    '<p>87 or 145 km one way / 3 or 5 days / Kayaking and canoeing.</p> <a href="http://localhost:3000/walk/9">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[5][0] + '</h3>' +
-    '<p>60 km loop / 3 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/3">Click here</a>' +
+    '<p>60 km loop / 3 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/3">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[6][0] + '</h3>' +
-    '<p>78.4 km one way / 4 - 6 days / Intermediate.</p> <a href="http://localhost:3000/walk/2">Click here</a>' +
+    '<p>78.4 km one way / 4 - 6 days / Intermediate.</p> <a href="http://localhost:3000/walk/2">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[7][0] + '</h3>' +
-    '<p>32 km one way / 2 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/7">Click here</a>' +
+    '<p>32 km one way / 2 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/7">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[8][0] + '</h3>' +
-    '<p>32 km loop / 3 days / Intermediate.</p> <a href="http://localhost:3000/walk/6">Click here</a>' +
+    '<p>32 km loop / 3 days / Intermediate.</p> <a href="http://localhost:3000/walk/6">Learn more...</a>' +
     '</div>']
 ]
 

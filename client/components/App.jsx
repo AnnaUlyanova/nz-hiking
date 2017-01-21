@@ -3,8 +3,7 @@ import React from 'react'
 import api from '../api'
 
 import Header from './Header'
-import Map from './Map'
-import Notes from './Notes'
+import Body from './Body'
 import Footer from './Footer'
 
 export default React.createClass({
@@ -12,8 +11,7 @@ export default React.createClass({
     return (
       <div className='container-fluid'>
         <Header />
-        <Map />
-        <Notes />
+        {this.props.children}
         <Footer />
       </div>
     )

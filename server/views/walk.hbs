@@ -1,21 +1,31 @@
-
-<div class="row">
-    <div class="col-md-12">
-<h2>{{currentWalk.walk_name}}</h2>
-<h4>{{currentWalk.description}}</h4>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
-        <a href="{{currentWalk.pdf_url}}" target="_blank">Download Walk PDF</a>
+<div class="container">
+  
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{currentWalk.walk_name}}</h2>
+            <h4>{{currentWalk.description}}</h4>
+        </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-12">
+          <a href="{{currentWalk.pdf_url}}" target="_blank">Download Walk PDF</a>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-md-8">
+        {{> activities}}
+
+        {{> pack-list}}
+      </div>
+
+      <div class="col-md-4">
+        {{> alerts}}
+      </div>
+    </div>
+
 </div>
-
-{{> activities}}
-
-{{> pack-list}}
-
-<iframe src="{{currentWalk.alerts}}" width='400px'>
-</iframe>
