@@ -1,18 +1,18 @@
 <div id="packing-list">
 
-    <h3>What to pack</h3>
+    <h3 class="partial-header">What to pack</h3>
 
     <ul>
     {{#each items}}
-    <li>{{item}}</li>
+    <li class="partial-list">{{item}}</li>
     {{/each}}
     </ul>
 
     <form action="/" method="post">
         <input type="hidden" name="id" value={{currentWalk.id}}>
-        <input type="text" name="itemname" placeholder="My item to pack" onfocus="this.placeholder = ''">
+        <input type="text" name="itemname" placeholder="My item to pack" onfocus="this.placeholder = ''" class="input">
 
-        <button type="submit" name="button">Add my item</button>
+        <button type="submit" name="button" class="note-btn">Add my item</button>
     </form>
-    
+
 </div>

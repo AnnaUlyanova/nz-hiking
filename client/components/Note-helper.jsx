@@ -1,9 +1,19 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+import Draggable, {DraggableCore} from 'react-draggable'
 
 export default React.createClass({
             getInitialState() {
                 return {editing: false}
             },
+
+            componentdidUpdate () {
+              if (this.state.editing) {
+                this.refs.newText.focus()
+                this.refs.newText.select()
+              }
+            },
+
             edit() {
                 this.setState({editing: true})
             },
@@ -17,8 +27,9 @@ export default React.createClass({
             renderForm() {
                 return (
                     <div className="note">
-                      <textarea ref="newText"></textarea>
-                      <button onClick={this.save}>SAVE</button>
+                      <textarea ref="newText"
+                        defaultValue={this.props.children}></textarea>
+                      <button onClick={this.save} className= 'note-btn'>&#10004;</button>
                     </div>
                 )
             },
@@ -27,15 +38,18 @@ export default React.createClass({
                     <div className="note">
                         <p>{this.props.children}</p>
                         <span>
-                          <button onClick={this.edit}>EDIT</button>
-                          <button onClick={this.remove}>X</button>
+                          <button onClick={this.edit} className= 'note-btn'>Edit</button>
+                          <button onClick={this.remove} className= 'note-btn'>X</button>
                         </span>
                     </div>
                     )
             },
             render() {
-              return (this.state.editing) ? this.renderForm()
-                                          : this.renderDisplay()
+              return ( <Draggable>
+                {(this.state.editing) ? this.renderForm()
+                                            : this.renderDisplay()}
+                        </Draggable>
+                     )
 
             }
         })

@@ -10,8 +10,12 @@ import About from './About'
 export default React.createClass({
   render() {
     return (
-      <div>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-12'>
         {this.props.children}
+          </div>
+        </div>
       </div>
     )
   }

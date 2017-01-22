@@ -1,26 +1,17 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+import Draggable, {DraggableCore} from 'react-draggable'
 
 import Note from './Note-helper'
 
 export default React.createClass({
-  propTypes: {
-            count: function(props, propName) {
-                if(typeof props[propName] !== "number") {
-                    return new Error("the count must be a number")
-                }
-
-                if(props[propName] > 100) {
-                    return new Error('Creating ' + props[propName] + ' notes is ridiculous')
-                }
-            }
-        },
-
-        getInitialState() {
+      getInitialState() {
             return {
-                notes: [{id: 100, note: 'Call Bob'},
-                      {id: 112, note: 'Email Sarah'},
-                      {id: 113, note: 'Eat Lunch'},
-                      {id: 114, note: 'Finish proposal'} ]
+                notes: [
+                  {id: 100, note: 'Find Abel Tasman side tracks'},
+                  {id: 112, note: 'Find waterfalls near Napier'},
+                  {id: 111, note: 'Fix hiking poles'}
+                ]
             }
         },
 
@@ -69,7 +60,7 @@ export default React.createClass({
         render() {
             return (<div className='board'>
                        {this.state.notes.map(this.eachNote)}
-                       <button onClick={() => this.add()}>Add a new note</button>
+                       <button className= 'note-btn' onClick={() => this.add()}>+</button>
                     </div>)
         }
 })

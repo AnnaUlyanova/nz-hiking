@@ -1,13 +1,13 @@
 <div id="activities">
 
-    <h3>What to see</h3>
+    <h3 class="partial-header">What to see</h3>
 
     <ul>
       {{#each activities}}
-        <li>{{description}}</li>
+        <li class="partial-list">{{description}}</li>
       {{/each}}
     </ul>
 
-    <a href="{{activities.0.url}}" class="button">Learn more..</a>
-    
+    <a href="{{activities.0.url}}"><button class="note-btn">Learn more..</button></a>
+
 </div>

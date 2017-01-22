@@ -1,11 +1,16 @@
+body {
+  font-family: 'Vollkorn', serif;
+}
+
 /*HEADER*/
 
 #header-text {
-  font-family: 'Eczar', serif;
+  font-family: 'IM Fell English SC', serif;
   letter-spacing: 2px;
   text-align: center;
   vertical-align: text-top;
   font-size: 4em;
+  color: #452F2F;
   padding-top: 6px;
 }
 
@@ -21,23 +26,54 @@
 #map {
   margin-top: 30px;
   height: 500px;
+  margin-bottom: 30px;
 }
 
 /*WALKS PAGE*/
+
+.walk-header {
+  font-family: 'Eczar', serif;
+  font-size: 3.5em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.walk-descr {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.partial-header {
+  font-size: 2.5em;
+}
+
+.partial-list {
+  list-style: square;
+  font-size: 1.5em;
+}
+
+.download {
+  width: 100% !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.3em !important;
+}
+
+.input {
+  font-size: 1em;
+  padding: 5px 10px 5px 10px;
+  margin-right: 15px;
+}
 #activities, #packing-list {
   margin-top: 30px;
   padding: 20px;
   height: 100%;
-  /*border: 1px solid #538CED;*/
 }
 
 #activities h3, #packing-list h3, #alerts h3 {
   margin-top: 0px;
 }
-
-/*div {
-  border: 1px solid red;
-}*/
 
 #activities {
   background-color: #BDD5FF;
@@ -64,9 +100,9 @@ iframe {
 
 div.note {
   height: 150px;
-  width: 150px;
-  background-color: yellow;
-  margin: 2px 0;
+  width: 200px;
+  background-color: #E0ECFF;
+  margin: 5px;
   position: relative;
   cursor: -webkit-grab;
   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
@@ -81,7 +117,8 @@ div.note p {
   margin: 0;
   font-size: 22px;
   padding: 5px;
-  font-family: "Shadows Into Light", Arial;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 2em;
 }
 
 div.note:hover > span {
@@ -105,17 +142,62 @@ div.note > textarea {
   background: rgba(255, 255, 255, .5);
 }
 
-div.board {
-  background-color: 'brown';
+.board {
+  background-color: #BDD5FF;
   width: 100%;
-  background: #eab92d;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.board > button {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  font-size: 1.5em;
+.note-btn {
+  font-size: 1em;
+  align-self: flex-end;
+  border:none;
+  background: #74c5fc;
+  background-image: -webkit-linear-gradient(top, #74c5fc, #438cba);
+  background-image: -moz-linear-gradient(top, #74c5fc, #438cba);
+  background-image: -ms-linear-gradient(top, #74c5fc, #438cba);
+  background-image: -o-linear-gradient(top, #74c5fc, #438cba);
+  background-image: linear-gradient(to bottom, #74c5fc, #438cba);
+  color: #000000;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.note-btn:hover {
+  background: #0390e8;
+  background-image: -webkit-linear-gradient(top, #0390e8, #286994);
+  background-image: -moz-linear-gradient(top, #0390e8, #286994);
+  background-image: -ms-linear-gradient(top, #0390e8, #286994);
+  background-image: -o-linear-gradient(top, #0390e8, #286994);
+  background-image: linear-gradient(to bottom, #0390e8, #286994);
+  text-decoration: none;
+}
+
+/*PHOTO GALLERY*/
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.gallery img {
+  margin: 5px;
+  height: 150px;
+}
+
+.walk-header a {
+  text-decoration: none;
+  color: #452F2F;
+}
+
+.walk-header a:hover {
+  color: #783B3B;
 }
 
 /*FOOTER*/
