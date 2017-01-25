@@ -58,9 +58,17 @@ export default React.createClass({
         },
 
         render() {
-            return (<div className='board'>
-                       {this.state.notes.map(this.eachNote)}
-                       <button className= 'note-btn' onClick={() => this.add()}>+</button>
-                    </div>)
+            return (
+              <div>
+                <div className='row'>
+                  <div className='col-md-12'>
+                    <h2 className="walk-header">My Notes</h2>
+                  </div>
+                </div>
+                <div className='board'>
+                   {this.state.notes.map(this.eachNote)}
+                   <button className= 'note-btn' onClick={() => this.add()}>+</button>
+                </div>
+              </div>)
         }
 })
