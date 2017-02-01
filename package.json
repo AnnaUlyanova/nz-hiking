@@ -47,6 +47,9 @@
     "generate": "rc-autocomplete",
     "postinstall": "webpack"
   },
+  "engines": {
+    "node": ">= 7.0"
+  },
   "babel": {
     "presets": [
       "es2015",
