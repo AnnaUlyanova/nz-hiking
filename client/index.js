@@ -60,18 +60,18 @@ window.initMap = function initMap() {
     var infoWindowContent =[
     ['<div class="info_content">' +
     '<h3>' + markers[0][0] + '</h3>' +
-    '<p>46 km one way/ 3 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/4">Learn more...</a>' + '</div>'],
+    '<p>46 km one way/ 3 - 4 days / Intermediate.</p> <a href="/walk/4">Learn more...</a>' + '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[1][0] + '</h3>' +
-    '<p>53.5 km one way / 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/5">Learn more...</a>' +
+    '<p>53.5 km one way / 4 days / Intermediate.</p> <a href="/walk/5">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[2][0] + '</h3>' +
-    '<p>60 km one way / 3 - 5 days / Intermediate.</p> <a href="http://localhost:3000/walk/1">Learn more...</a>' +
+    '<p>60 km one way / 3 - 5 days / Intermediate.</p> <a href="/walk/1">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[3][0] + '</h3>' +
-    '<p>43.1 km loop / 3-4 days / Intermediate.</p> <a href="http://localhost:3000/walk/8">Learn more...</a>' +
+    '<p>43.1 km loop / 3-4 days / Intermediate.</p> <a href="/walk/8">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[4][0] + '</h3>' +
@@ -79,19 +79,19 @@ window.initMap = function initMap() {
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[5][0] + '</h3>' +
-    '<p>60 km loop / 3 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/3">Learn more...</a>' +
+    '<p>60 km loop / 3 - 4 days / Intermediate.</p> <a href="/walk/3">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[6][0] + '</h3>' +
-    '<p>78.4 km one way / 4 - 6 days / Intermediate.</p> <a href="http://localhost:3000/walk/2">Learn more...</a>' +
+    '<p>78.4 km one way / 4 - 6 days / Intermediate.</p> <a href="/walk/2">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[7][0] + '</h3>' +
-    '<p>32 km one way / 2 - 4 days / Intermediate.</p> <a href="http://localhost:3000/walk/7">Learn more...</a>' +
+    '<p>32 km one way / 2 - 4 days / Intermediate.</p> <a href="/walk/7">Learn more...</a>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h3>' + markers[8][0] + '</h3>' +
-    '<p>32 km loop / 3 days / Intermediate.</p> <a href="http://localhost:3000/walk/6">Learn more...</a>' +
+    '<p>32 km loop / 3 days / Intermediate.</p> <a href="/walk/6">Learn more...</a>' +
     '</div>']
 ]
 
