@@ -43,9 +43,10 @@
     "start": "node ./server/index.js",
     "debug": "node-debug index",
     "knex": "knex",
+    "migrate": "knex migrate:latest",
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "rc-autocomplete",
-    "postinstall": "webpack"
+    "postinstall": "webpack && npm run migrate"
   },
   "engines": {
     "node": "6.9.1"
