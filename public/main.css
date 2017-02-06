@@ -227,7 +227,7 @@ div#slider figure img {
   width: 20%;
   float: left;
  }
- 
+
 div#slider figure {
   position: relative;
   width: 500%;
@@ -236,6 +236,13 @@ div#slider figure {
   text-align: left;
   font-size: 0;
   animation: 30s slidy infinite;
+}
+
+/*ABOUT*/
+
+.about {
+  font-size: 1.5em;
+  text-indent: 1.5em;
 }
 
 /*FOOTER*/

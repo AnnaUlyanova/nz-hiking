@@ -30817,7 +30817,27 @@
 	        return _react2.default.createElement(
 	            'div',
 	            { className: 'container' },
-	            'About'
+	            _react2.default.createElement(
+	                'h2',
+	                { className: 'walk-header' },
+	                'About'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                { className: 'about' },
+	                'New Zealand Great Hiking Adventure application will help you to be prepared for NZ 9 Great Walks. You can check the map, activities on the particular walk, suggestions what to pack, see current alerts, add notes.'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                { className: 'about' },
+	                'This project has been created as a part of my learning journey at ',
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.devacademy.co.nz/', target: '_blank' },
+	                    'Enspiral Dev Academy'
+	                ),
+	                '.'
+	            )
 	        );
 	    }
 	});
