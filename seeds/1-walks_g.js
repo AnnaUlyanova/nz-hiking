@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
           description: '60 km one way / 3 - 5 days / Intermediate',
           full_walk: true,
           pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/nelson-marlborough/abel-tasman-coast-track-brochure.pdf',
-          alerts: 'http://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track/#alert-panel'
+          alerts: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track/#alert-panel'
         }),
         knex('walks_general').insert({
           id: 2,
@@ -19,7 +19,7 @@ exports.seed = function(knex, Promise) {
           description: '78.4 km one way / 4 - 6 days / Intermediate',
           full_walk: true,
           pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/nelson-marlborough/heaphy-track-brochure.pdf',
-          alerts: 'http://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track/#alert-panel'
+          alerts: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track/#alert-panel'
         }),
         knex('walks_general').insert({
           id: 3,
@@ -27,7 +27,7 @@ exports.seed = function(knex, Promise) {
           description: '60 km loop / 3 - 4 days / Intermediate',
           full_walk: true,
           pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/southland/kepler-track-brochure.pdf',
-          alerts: 'http://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/kepler-track/#alert-panel'
+          alerts: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/kepler-track/#alert-panel'
         }),
         knex('walks_general').insert({
           id: 4,
@@ -35,7 +35,7 @@ exports.seed = function(knex, Promise) {
           description: '46 km one way/ 3 - 4 days / Intermediate',
           full_walk: true,
           pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/east-coast-hawkes-bay/lake-waikaremoana-track.pdf',
-          alerts: 'http://www.doc.govt.nz/parks-and-recreation/places-to-go/east-coast/places/te-urewera/things-to-do/tracks/lake-waikaremoana-great-walk/#alert-panel'
+          alerts: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/east-coast/places/te-urewera/things-to-do/tracks/lake-waikaremoana-great-walk/#alert-panel'
         }),
         knex('walks_general').insert({
           id: 5,
@@ -43,7 +43,7 @@ exports.seed = function(knex, Promise) {
           description: '53.5 km one way / 4 days / Intermediate',
           full_walk: true,
           pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/southland/milford-track-brochure.pdf',
-          alerts: 'http://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/milford-track/#alert-panel'
+          alerts: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/milford-track/#alert-panel'
         }),
         knex('walks_general').insert({
           id: 6,
@@ -51,7 +51,7 @@ exports.seed = function(knex, Promise) {
           description: '32 km loop / 3 days / Intermediate',
           full_walk: true,
           pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/southland/rakiura-track-brochure.pdf',
-          alerts: 'http://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/things-to-do/rakiura-track/#alert-panel'
+          alerts: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/rakiura-national-park/things-to-do/rakiura-track/#alert-panel'
         }),
         knex('walks_general').insert({
           id: 7,
@@ -59,7 +59,7 @@ exports.seed = function(knex, Promise) {
           description: '32 km one way / 2 - 4 days / Intermediate',
           full_walk: true,
           pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/southland/routeburn-track-brochure.pdf',
-          alerts: 'http://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track/#alert-panel'
+          alerts: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track/#alert-panel'
         }),
         knex('walks_general').insert({
           id: 8,
@@ -67,7 +67,7 @@ exports.seed = function(knex, Promise) {
           description: '43.1 km loop / 3-4 days / Intermediate',
           full_walk: true,
           pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/tongariro-taupo/tongariro-circuit-brochure.pdf',
-          alerts: 'http://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-northern-circuit/#alert-panel'
+          alerts: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-northern-circuit/#alert-panel'
         }),
         knex('walks_general').insert({
           id: 9,
@@ -75,7 +75,7 @@ exports.seed = function(knex, Promise) {
           description: '87 or 145 km one way / 3 or 5 days / Kayaking and canoeing',
           full_walk: true,
           pdf_url: 'http://www.doc.govt.nz/Documents/parks-and-recreation/tracks-and-walks/wanganui/whanganui-journey-brochure.pdf',
-          alerts: 'http://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/whanganui-national-park/things-to-do/tracks/whanganui-journey/#alert-panel'
+          alerts: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/whanganui-national-park/things-to-do/tracks/whanganui-journey/#alert-panel'
         }),
         knex('walks_general').insert({
           id: 10,
