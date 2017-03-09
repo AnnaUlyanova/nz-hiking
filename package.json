@@ -50,7 +50,7 @@
     "debug": "node-debug index",
     "knex": "knex",
     "migrate": "knex migrate:latest",
-    
+    "test": "babel-tape-runner tests/**/*.js | faucet",
     "generate": "rc-autocomplete",
     "postinstall": "webpack && npm run migrate"
   },
